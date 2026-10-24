@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>du4s.com · 已就绪</title>
+<style>
+  :root {
+    --bg: #0b1020;
+    --card: rgba(255, 255, 255, 0.06);
+    --line: rgba(255, 255, 255, 0.14);
+    --text: #eef2ff;
+    --muted: #9aa7c7;
+    --accent: #6ea8ff;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    color: var(--text);
+    background:
+      radial-gradient(1000px 600px at 15% -10%, #1b2a5a 0%, transparent 60%),
+      radial-gradient(900px 600px at 95% 110%, #1a3d4d 0%, transparent 55%),
+      var(--bg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+      "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    width: min(680px, 100%);
+    padding: 48px 40px;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background: var(--card);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+    text-align: center;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 14px;
+    border: 1px solid rgba(110, 168, 255, 0.35);
+    border-radius: 999px;
+    color: var(--accent);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+  }
+  .badge span {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: #4ade80;
+    box-shadow: 0 0 12px #4ade80;
+  }
+  h1 {
+    margin: 26px 0 12px;
+    font-size: clamp(34px, 7vw, 52px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  p { margin: 0; }
+  .lead {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .meta {
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.9;
+  }
+  code {
+    padding: 2px 7px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text);
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+    font-size: 0.92em;
+  }
+</style>
+</head>
+<body>
+  <main>
+    <div class="badge"><span></span>DNS 解析正常</div>
+    <h1>du4s.com</h1>
+    <p class="lead">这个域名已经可以正常访问了。<br>接下来把它指向你自己的服务器，页面内容随时可以换掉。</p>
+    <div class="meta">
+      托管于 GitHub Pages · 租用到期 2027-10-24<br>
+      <code>du4s.com</code>　<code>www.du4s.com</code>
+    </div>
+  </main>
+</body>
+</html>
